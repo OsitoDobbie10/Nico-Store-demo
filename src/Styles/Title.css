@@ -1,0 +1,32 @@
+
+.typed>h1{
+    margin-top: 85px;
+    font-size: 35px;
+    text-align: center;
+    color:white;
+    text-shadow: 0 0 6px yellow;
+}
+.typed>span{
+    font-size: 35px;
+    text-align: center;
+    color:white;
+    text-shadow: 0 0 6px yellow;
+}
+
+@media screen and (max-width:768px){
+    .typed>h1{
+        margin-top: 15px;
+        font-size: 20px;
+        text-align: center;
+        color:white;
+        text-shadow: 0 0 6px yellow;
+    }
+    .typed>span{
+        font-size: 20px;
+        text-align: center;
+        color:white;
+        text-shadow: 0 0 6px yellow;
+    }
+    
+
+}

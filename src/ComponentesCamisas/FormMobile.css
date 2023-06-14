@@ -1,0 +1,13 @@
+@media screen and (max-width:768px) {
+    .Mobile{
+        position: absolute;
+        top:5px;
+        left: 10px;
+    }
+
+    .accordion-body>div{
+        display: flex;
+        flex-direction: column;
+    
+    }
+}

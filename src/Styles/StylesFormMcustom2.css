@@ -1,0 +1,45 @@
+.Formulario{
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Formulario>.Titulo{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top:0
+}
+
+.Formulario>.Titulo>img{
+    width: 60px;
+    height: 60px;
+}
+
+.Formulario>.cuerpo{
+    width: 100%;
+    position: absolute;
+    top:70px;
+    border: 1px solid black;
+}
+
+.Precio{
+    display: flex;
+    flex-direction: column;
+}
+
+.Talla{
+    display: flex;
+    flex-direction: column;
+}
+
+.Color{
+    display: flex;
+    flex-direction: column;
+}

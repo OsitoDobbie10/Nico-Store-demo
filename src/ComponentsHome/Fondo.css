@@ -1,0 +1,101 @@
+.Fondo{
+    width: 100%;
+    height: 400px;
+    color: yellow;
+    display: flex;
+}
+
+
+.Fondo>.Izquierda{
+    width: 50%;
+    height: 100%;
+    background: pink;
+}
+
+.Izquierda>img{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.Fondo>.Derecha{
+    width: 50%;
+    height: 100%;
+    background: gray;
+    display: flex;
+    flex-direction: column;
+}
+.Derecha>.imagenes{
+    display: flex;
+    justify-content: center;
+}
+.Derecha>.imagenes>img{
+    width: 150px;
+    height: 150px;
+}
+
+.Derecha>.redes{
+    display: flex;
+    justify-content: center;
+}
+
+.Derecha>.redes>a{
+    font-size: 35px;
+    color: white;
+}
+@media screen and (max-width:768px) {
+
+    .Fondo{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .Fondo>.Izquierda{
+        width: 100%;
+        height: 250px;
+        background: pink;
+    }
+    
+    
+    .Izquierda>img{
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: auto;
+        border-radius: 50%;
+        margin-top: 20px;
+    }
+    
+    .Fondo>.Derecha{
+        width: 100%;
+        height: 250px;
+        background: gray;
+        display: flex;
+        flex-direction: column;
+    }
+    .Derecha>.imagenes{
+        display: flex;
+        justify-content: center;
+    }
+    .Derecha>.imagenes>img{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .Derecha>.redes{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .Derecha>.redes>a{
+        font-size: 35px;
+        color: white;
+    }
+
+
+
+}

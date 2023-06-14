@@ -1,0 +1,75 @@
+.Productos{
+    grid-column: 4/13;
+}
+
+.title{text-align: center;
+       font-style: 35px;
+       font-size: 25px;
+       text-shadow: 0 0 4px yellow; }
+
+.arrayCamisas{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+    align-items: center;
+    list-style: none;
+
+}
+
+.arrayCamisas>li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 180px;
+    border: 1px solid black;
+    height: 300px;
+}
+.arrayCamisas>li>img{
+    width: 150px;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+.arrayCamisas>li>p{
+    text-align: center;
+}
+
+@media screen and (max-width:768px){
+    .Productos{
+        grid-column: 1/-1;
+        position: relative;
+    }
+
+    .title{text-align: center;
+        font-size: 25px;
+        text-shadow: 0 0 4px yellow; 
+         margin-top: 35PX;}
+ 
+
+    .arrayCamisas{
+        margin-top: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        gap:15px;
+        align-items: center;
+        list-style: none;
+        justify-content: center;
+    }
+
+    .arrayCamisas>li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 280px;
+        border: 1px solid black;
+        height: 400px;
+    }
+
+    .arrayCamisas>li>img{
+        width: 200px;
+        height: 250px;
+        display: block;
+        margin: auto;
+    }
+}

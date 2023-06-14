@@ -1,0 +1,17 @@
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    width: 100%;
+    margin: auto;
+    border: 1 px solid black;
+    height: 600px;
+}
+
+
+@media screen and (max-width:768px){
+    .grilla{
+        width:100%;
+        position: relative;
+        height: 300px;
+    }
+}
