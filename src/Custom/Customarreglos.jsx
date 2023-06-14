@@ -17,45 +17,45 @@ const moveLastToFirst = (array)=>{
 //Talla
 const arreglo = [... new Set(shirt.map(shirt=>shirt.Talla))];
 const TallaCamisas = arreglo.filter((value,index)=>arreglo.indexOf(value) === index);
-TallaCamisas.push('all');
-const [arraTallaCamisas,setArrayTallaCamisas] = useState(TallaCamisas);
+const TallaCamisasnew = [...TallaCamisas,'Todos'];
+const [arraTallaCamisas,setArrayTallaCamisas] = useState(TallaCamisasnew);
 const arreglo1 = [...new Set(Zapatos.map(shoes=>shoes.Talla))];
 const TallaZapatos = arreglo1.filter((value,index)=>arreglo1.indexOf(value) === index);
-TallaZapatos.push('all');
+TallaZapatos.push('Todos');
 const [arrayTalla, setArrayTalla] = useState(TallaZapatos);
 const arreglo2 = [...new Set(Vestidos.map(dress=>dress.Talla))];
 const TallaVestidos = arreglo2.filter((value,index)=>arreglo2.indexOf(value) === index);
-TallaVestidos.push('all');
-const [arrayTalla2 , setArrayTalla1] = useState(TallaVestidos);
+const TallaVestidosnew = [...TallaVestidos,'Todos']
+const [arrayTalla2 , setArrayTalla1] = useState(TallaVestidosnew);
 const arreglo3 = [...new Set(Faldas.map(skirt=>skirt.Talla))];
 const TallaFaldas = arreglo3.filter((value,index)=>arreglo3.indexOf(value) === index);
-TallaFaldas.push('all');
-const [arrayTalla3,setArrayTalla3] = useState(TallaFaldas)
+const TallaFaldasnew = [...TallaFaldas,'Todos'];
+const [arrayTalla3,setArrayTalla3] = useState(TallaFaldasnew)
 const arreglo4 = [...new Set(Pantalones.map(pants=>pants.Talla))];
 const TallaPantalones = arreglo4.filter((value,index)=>arreglo4.indexOf(value) === index);
-TallaPantalones.push('all');
-const [arrayTalla4,setArrayTalla4] = useState(TallaPantalones)
+const TallaPantalonesnew = [...TallaPantalones,'Todos'];
+const [arrayTalla4,setArrayTalla4] = useState(TallaPantalonesnew);
 //Vestidos
 const arreglo9 = [... new Set(shirt.map(shirt=>shirt.color))];
 const ColorCamisas = arreglo9.filter((value,index)=>arreglo9.indexOf(value) === index);
-ColorCamisas.push('all');
-const [arrayaCamisasColor,setArrayCamisasColor] = useState(ColorCamisas);
+const ColorCamisasnew = [...ColorCamisas,'Todos'];
+const [arrayaCamisasColor,setArrayCamisasColor] = useState(ColorCamisasnew);
 const arreglo5 = [...new Set(Zapatos.map(shoes=>shoes.color))];
 const ColorZapatos = arreglo5.filter((value,index)=>arreglo5.indexOf(value) === index);
-ColorZapatos.push('all');
-const [arrayColor, setArrayColor] = useState(ColorZapatos);
+const ColorZapatosmew = [...ColorZapatos,'Todos'];
+const [arrayColor, setArrayColor] = useState(ColorZapatosmew);
 const arreglo6 = [...new Set(Vestidos.map(dress=>dress.color))];
 const ColorVestidos = arreglo6.filter((value,index)=>arreglo6.indexOf(value) === index);
-ColorVestidos.push('all');
-const [arrayColor2 , setArrayColor2] = useState(ColorVestidos);
+const ColorVestidosnew = [...ColorVestidos,'Todos'];
+const [arrayColor2 , setArrayColor2] = useState(ColorVestidosnew);
 const arreglo7 = [...new Set(Faldas.map(skirt=>skirt.color))];
 const ColorFaldas = arreglo7.filter((value,index)=>arreglo7.indexOf(value) === index);
-ColorFaldas.push('all');
-const [arrayColor3,setArrayColor3] = useState(ColorFaldas)
+const ColorFaldasnew = [...ColorFaldas,'Todos'];
+const [arrayColor3,setArrayColor3] = useState(ColorFaldasnew)
 const arreglo8 = [...new Set(Pantalones.map(pants=>pants.color))];
 const ColorPantalones = arreglo8.filter((value,index)=>arreglo8.indexOf(value) === index);
-ColorPantalones.push('all');
-const [arrayColor4,setArrayColor4] = useState(ColorPantalones)
+const ColorPantalonesnew = [...ColorPantalones,'Todos'];
+const [arrayColor4,setArrayColor4] = useState(ColorPantalonesnew);
   return (
     {arraTallaCamisas,
     arrayTalla,
