@@ -115,17 +115,17 @@
 
     .navbar-header{
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
-        text-align: center;
+        flex-direction: column;
+        
     }
 
     .link{
         background: rgba(255,255,255,0.9);
-        width: 340px;
+        width: 150px;
         display: block;
         color: black;
+        border-radius: 20px;
     }
   
     
