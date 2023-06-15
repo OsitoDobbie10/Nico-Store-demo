@@ -106,6 +106,9 @@
         width: 300px;
         height: 300px;
         border: 2px solid white;
-    
+    }
+
+    .BiggerImage>.Arreglo{
+        text-align: center;
     }
 }
