@@ -25,7 +25,7 @@ const Camisas = () => {
   const producto = functionfilter(dato);
   setTimeout(()=>{
     setTime(false);
-  },1000)
+  },2000)
   if (time) return <Sppiner/>
 
   return (
