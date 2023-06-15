@@ -51,7 +51,7 @@ const Zapatos = () => {
                       nombreRef2id={nombreRefTallazapatos}
                       nombreRef3id={nombreRefColorzapatos}
                       valormaximo="2000"/>}
-        <CustomProducts productsshoes = {productozapatos} titulo="Vestidos disponibles"/>
+        <CustomProducts productsshoes = {productozapatos} titulo="Zapatos disponibles"/>
         <Footer/>
        </div>
        
