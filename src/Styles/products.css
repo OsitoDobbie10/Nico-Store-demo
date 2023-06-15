@@ -85,28 +85,17 @@
  
 
     .arrayCamisas{
-        margin-top: 25px;
-        display: flex;
-        flex-wrap: wrap;
-        gap:15px;
-        align-items: center;
-        list-style: none;
-        justify-content: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+        
     }
 
-    .arrayCamisas>li{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 280px;
-        border: 1px solid black;
-        height: 450px;
-        margin: auto;
-    }
+    
 
     .arrayCamisas>li>img{
-        width: 200px;
-        height: 250px;
+        width: 150px;
+        height: 150px;
         display: block;
         margin: auto;
     } 
