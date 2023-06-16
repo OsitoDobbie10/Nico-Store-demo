@@ -3,7 +3,7 @@ import CustomForm from '../Custom/CustomForm';
 import "../Styles/FormIntro.css"
 
 const FormIntro = () => {
-    const {password,setPassword,error} = CustomForm();
+    const {password,setPassword,error,setGlobal,invalido,setInvalido} = CustomForm();
     const cambiarvalores = (texto)=>{
       let palabra = ''
       for (let i=0; i<texto.length; i++){
@@ -11,12 +11,22 @@ const FormIntro = () => {
           }
           return palabra
     }
+    const Validar = (event)=>{
+      event.preventDefault();
+      if (password === 'Hillary2011'){
+        setGlobal(false)
+      }
+      else{
+        setInvalido('Contraseña invalida, prueba de nuevo')
+      }
+
+    }
   return (
     <div className='Formulario'>
         <div className="formelemento">
             <h2>Bienvenido</h2>
             <span> Introduce tu contraseña de empleado para ver el panel</span>
-            <form className='form'>
+            <form className='form' onSubmit={Validar}>
                 <input
                  onChange={(e)=>setPassword(e.target.value)}
                  type="text"
@@ -27,6 +37,9 @@ const FormIntro = () => {
                  }}/>
                  {error && <p className='ErrorPassword'>{error}</p>}
                  <button type="submit" className='btn btn-dark'>Confirmar empleado</button>
+                 {invalido && <span className='Invalido'>{invalido}</span> }
+
+
             </form>
         </div>
     </div>

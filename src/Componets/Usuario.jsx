@@ -8,7 +8,7 @@ import Productosempleado from './Productosempleado';
 import CustomForm from "../Custom/CustomForm";
 const Usuario = () => {
   const [statebegin,setStatebegin] = useState(true);
-  const {global,setGlobal} = CustomForm();
+  const {global} = CustomForm();
   setTimeout(()=>{
       setStatebegin(false)
   },2000)

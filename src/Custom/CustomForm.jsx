@@ -6,6 +6,7 @@ const CustomForm = () => {
     const [global,setGlobal] = useState(true);
     const [error,setError] = useState(null);
     const [password,setPassword] = useState("")
+    const [invalido,setInvalido] = useState(null);
     const InputCurrent = useRef(true);
     useEffect(()=>{
         if(InputCurrent.current){
@@ -29,7 +30,7 @@ const CustomForm = () => {
         }
         setError(null)
     },[password])
-  return {global,setGlobal,password,error,setPassword}
+  return {global,setGlobal,password,error,setPassword,invalido,setInvalido}
 }
 
 export default CustomForm
