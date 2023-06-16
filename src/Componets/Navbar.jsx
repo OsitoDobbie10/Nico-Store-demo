@@ -38,6 +38,7 @@ const Navbar = () => {
             <li><NavLink to={'/Vestidos'} className={'link'}>Vestidos</NavLink></li>
             <li><NavLink to={'/Pantalones'} className={'link'}>Pantalones</NavLink></li>
             <li><NavLink to={'/Faldas'} className={'link'}>Faldas</NavLink></li>
+            <li><NavLink to={'/Productos'} className={'link'}>Productos</NavLink></li>
         </ul>
         <div className="imagen">
         <img src={img1} alt="Imagen encabezado" />
