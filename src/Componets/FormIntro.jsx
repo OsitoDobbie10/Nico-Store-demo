@@ -2,8 +2,9 @@ import React from 'react';
 import CustomForm from '../Custom/CustomForm';
 import "../Styles/FormIntro.css"
 
-const FormIntro = () => {
-    const {password,setPassword,error,setGlobal,invalido,setInvalido} = CustomForm();
+const FormIntro = (props) => {
+    const {setLorem1} = props;
+    const {password,setPassword,error,invalido,setInvalido} = CustomForm();
     const cambiarvalores = (texto)=>{
       let palabra = ''
       for (let i=0; i<texto.length; i++){
@@ -14,7 +15,7 @@ const FormIntro = () => {
     const Validar = (event)=>{
       event.preventDefault();
       if (password === 'Hillary2011'){
-        setGlobal(false)
+        setLorem1(false)
       }
       else{
         setInvalido('Contraseña invalida, prueba de nuevo')
@@ -22,7 +23,7 @@ const FormIntro = () => {
 
     }
   return (
-    <div className='Formulario'>
+    <div className='Formulario101'>
         <div className="formelemento">
             <h2>Bienvenido</h2>
             <span> Introduce tu contraseña de empleado para ver el panel</span>

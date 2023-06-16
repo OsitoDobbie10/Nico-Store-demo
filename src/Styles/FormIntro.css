@@ -1,4 +1,4 @@
-.Formulario{
+.Formulario101{
     position:fixed;
     min-width: 100%;
     min-height: 100%;
@@ -12,7 +12,7 @@
     align-items: center;  
 }
 
-.Formulario>.formelemento{
+.Formulario101>.formelemento{
     width: 400px;
     height: 280px;
     display: flex;

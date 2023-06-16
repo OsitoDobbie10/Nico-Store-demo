@@ -5,10 +5,9 @@ import Navbar from './Navbar';
 import ScrollToTop from './ScrollToTop';
 import FormIntro from './FormIntro';
 import Productosempleado from './Productosempleado';
-import CustomForm from "../Custom/CustomForm";
 const Usuario = () => {
   const [statebegin,setStatebegin] = useState(true);
-  const {global} = CustomForm();
+  const [Lorem1,setLorem1] = useState(true);
   setTimeout(()=>{
       setStatebegin(false)
   },2000)
@@ -17,7 +16,7 @@ return (
   <div>
   <Navbar/>
   <ScrollToTop/>
-  {global ? <FormIntro/>:
+  {Lorem1 ? <FormIntro setLorem1={setLorem1}/>:
             <Productosempleado/>}
   </div>
 )}
