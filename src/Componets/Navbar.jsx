@@ -42,7 +42,7 @@ const Navbar = () => {
         </ul>
         <div className="imagen">
         <img src={img1} alt="Imagen encabezado" />
-        </div>
+        </div> 
       
         </div>
     }

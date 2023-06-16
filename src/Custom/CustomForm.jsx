@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useRef } from "react";
 
 const CustomForm = () => {
+    const [global,setGlobal] = useState(true);
     const [error,setError] = useState(null);
     const [password,setPassword] = useState("")
     const InputCurrent = useRef(true);
@@ -17,18 +18,18 @@ const CustomForm = () => {
             return
         }
 
-        if (password.length < 3){
-            setError('La contraseña contiene mas de 3 caracteres no es valida')
-            return
-        }
-
         if (password.match(/^\d+$/)){
             setError('La contrasena no puede comenzar con un numero')
             return
         }
-    
+        
+        if (password !== 'Hillary2011'){
+            setError('contrasena no valida')
+            return
+        }
+        setError(null)
     },[password])
-  return {password,error,setPassword}
+  return {global,setGlobal,password,error,setPassword}
 }
 
 export default CustomForm
