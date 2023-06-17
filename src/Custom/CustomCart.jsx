@@ -3,9 +3,11 @@ import { useId} from 'react'
 import carrito from '../Files/Add-Cart.png'
 import '../Styles/Cartcustom.css'
 import CustomBotom from './CustomBotom.jsx'
-import CustomAddCart from './CustomAddCart'
+//import CustomAddCart from './CustomAddCart'
 import CustomWhatsapp from './CustomWhatsapp'
 import { motion } from 'framer-motion'
+import { useContext } from 'react'
+import {CreateContext2} from '../Contexts/Context2'
 
 function Valores({imagen,descp,precio,quantity}){
     return <li>
@@ -27,7 +29,8 @@ function Valores({imagen,descp,precio,quantity}){
 
 const CustomCart = () => {
     const checkboxid = useId();
-    const {cart,ClearCard} = CustomAddCart();
+    const {cart,ClearCard} = useContext(CreateContext2);
+    //const {cart,ClearCard} = CustomAddCart();
     const {boton,setBoton} = CustomBotom();
     const {sendMessage,setNombre} = CustomWhatsapp();
    

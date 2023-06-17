@@ -1,11 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { createContext } from 'react'
-import { useState } from 'react';
+//import { useState } from 'react';
 export const CreateContext2 = createContext();
 
 export function Context2Provider({children}){
     const [cart,setCart] = useState([]);
-
     const addCart = (product)=>{
         const productValid = cart.findIndex(item=>item.id === product.id);
 
@@ -27,19 +26,20 @@ export function Context2Provider({children}){
 
     }
 
-    const ClearCard = ()=>{
+ const ClearCard = ()=>{
         setCart([]);
     }
 
 
-    const removeCart = (product)=>{
+const removeCart = (product)=>{
         setCart(prevState=> prevState.filter(value=>value.id !== product.id))
     }
+ 
+  
     
     return (
         <CreateContext2.Provider value={{
             cart,
-            setCart,
             addCart,
             ClearCard,
             removeCart
