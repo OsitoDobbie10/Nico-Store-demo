@@ -1,0 +1,46 @@
+.Formato{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    
+
+}
+
+.formularioproducts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 15px auto;
+    background-color: rgba(186, 170, 170,0.9);
+    border: 1 px solid black;
+}
+.Categoria{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0 0 6px yellow;
+}
+
+.SelectCategoria{
+    margin: auto; 
+    width: 80%;
+}
+
+.Id{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 0 0 6px yellow;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.IDInput{
+    display: block;
+    width: 300px;
+}

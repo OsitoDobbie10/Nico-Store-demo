@@ -1,3 +1,4 @@
+import { useReducer } from "react";
 export const Inicialvalue = [];
 export const reducer = (state,action)=>{
     const {type: actiontype,payload:actionpayload} = action
