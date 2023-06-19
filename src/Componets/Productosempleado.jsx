@@ -10,6 +10,7 @@ const Productosempleado = () => {
     const {inputIdstate,errorId,obtenervalor} = Custom1();    
   return (
     <div className='Formato'>
+        <h2 style={{textAlign:'center'}}>Busqueda de productos</h2>
         <form className='formularioproducts'>
             <label  htmlFor = {Inputselect} className='Categoria'>
                 Seleccione el producto que el cliente compro
@@ -31,12 +32,9 @@ const Productosempleado = () => {
                    onChange={obtenervalor}
                    className='IDInput' />
             {
-                errorId?
-                <p style={{textAlign:'center',
-                           color:'red',
-                           fontSize:'10px'}}
-                >{errorId}</p>:
-                <div></div>
+                errorId&& <p style={{textAlign:'center',
+                             color:'red',
+                             fontSize:'10px'}}>{errorId}</p>
             }
             <button type="submit" className='btn btn-info mb-2 mt-2'>Buscar</button>
         </form>

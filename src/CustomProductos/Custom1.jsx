@@ -8,11 +8,11 @@ const Custom1 = () => {
         refId.current = inputIdstate === '';
         return 
       } 
-
     if(inputIdstate === ''){
         setErrorId('Ingresa bien el numero del ID')
+        return
     }
-     
+    setErrorId(null)    
   },[inputIdstate])
   const obtenervalor = (e)=>{
     setInputIdstate(e.target.value)
