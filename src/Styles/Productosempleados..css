@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 35%;
     margin: 15px auto;
     background-color: rgba(186, 170, 170,0.9);
     border: 1 px solid black;
@@ -20,10 +20,10 @@
 .Categoria{
     text-align: center;
     margin-top: 10px;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
-    text-shadow: 0 0 6px yellow;
+    font-weight: bold;
+    color: black;
 }
 
 .SelectCategoria{
@@ -36,13 +36,45 @@
     margin-top: 10px;
     font-size: 15px;
     font-weight: bold;
-    text-shadow: 0 0 6px yellow;
+    color: black;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .IDInput{
     display: block;
     width: 300px;
+}
+
+.resultdosbusqueda{
+   margin-top: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.resultdosbusqueda>.productocompra{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+}
+.productocompra>h4{
+    text-align: center;
+    font-weight: bold;
+}
+.productocompra>img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+.productocompra>span{
+    text-align: center;
+    font-weight: bold;
+    color:blue;
+    font-size: 25px;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px){

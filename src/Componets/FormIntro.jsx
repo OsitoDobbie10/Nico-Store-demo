@@ -14,12 +14,13 @@ const FormIntro = (props) => {
     }
     const Validar = (event)=>{
       event.preventDefault();
-      if (password === 'Hillary2011'){
+      if (password === '1993'){
         setLorem1(false)
       }
       else{
         setInvalido('Contraseña invalida, prueba de nuevo')
       }
+      
 
     }
   return (
