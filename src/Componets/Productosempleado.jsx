@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import '../Styles/Productosempleados..css';
 import { useId } from 'react';
 import Custom1 from '../CustomProductos/Custom1';

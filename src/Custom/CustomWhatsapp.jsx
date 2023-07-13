@@ -4,6 +4,7 @@ import { useState } from 'react';
 const CustomWhatsapp = () => {
     const {cart} = CustomAddCart();
     const [nombre,setNombre] = useState("")
+    const [direccion,setDireccion] = useState("");
     const sendMessage = (carrito)=>{
         const objeto = cart.find((value)=> value.id === carrito.id)
         const Descripcionproducto = objeto.descp;
@@ -32,20 +33,22 @@ const CustomWhatsapp = () => {
         ${nombre}%0A
         *Producto que se llevara*%0A
         ${Descripcionproducto}%0A
+        *Direccion del cliente*%0A
+        ${direccion}%0A
         *ID del producto de ${producto}*%0A
         ${IDproducto}%0A
         *Talla del producto que se compra*%0A
         ${Tallaproducto}%0A
         *Color del producto escogido*%0A
         ${Colorproducto}%0A 
-        *Fecha en la que se pidio el producto escogido*%0A
+        *Fecha en la que se pidió  el producto escogido*%0A
         ${fecha}%0A`;
         window.open(url);
 
     }
    
     
-  return{sendMessage,setNombre}
+  return{sendMessage,setNombre,setDireccion}
 }
 
 export default CustomWhatsapp

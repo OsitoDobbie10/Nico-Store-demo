@@ -32,7 +32,7 @@ const CustomCart = () => {
     const {cart,ClearCard} = useContext(CreateContext2);
     //const {cart,ClearCard} = CustomAddCart();
     const {boton,setBoton} = CustomBotom();
-    const {sendMessage,setNombre} = CustomWhatsapp();
+    const {sendMessage,setNombre,setDireccion} = CustomWhatsapp();
    
   return (
     <>
@@ -66,6 +66,8 @@ const CustomCart = () => {
                  <div className="datos">
                   <span>Escribe tu nombre</span>
                  <input type="text" className='nombre'onChange={(e)=>{setNombre(e.target.value)}}/>
+                 <span>Escribe tu direccion</span>
+                 <input type="text" className='nombre' onChange={(e)=>{setDireccion(e.target.value)}} />
                  </div>
                  <div className="enviar">
                  <button type="button" class="btn btn-primary boton" onClick={()=>sendMessage(carrito)}>Enviar pedido</button>
