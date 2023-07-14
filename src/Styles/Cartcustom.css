@@ -50,6 +50,11 @@
 .datos>.nombre{
   width: 100%;
 }
+
+.icon-location{
+ font-size: 25px;
+ font-weight: bold;
+}
   .cart-button {
     align-items: center;
     background: #09f;
@@ -105,7 +110,11 @@
         justify-content: center;
       }
 
-    
+      .icon-location{
+        font-size: 20px;
+        font-weight: bold;
+       }
+
 
 
     

@@ -12,6 +12,7 @@ import Carritovestidos from './Componets/Carritovestidos';
 import CarritoPantalones from './Componets/CarritoPantalones';
 import {Context2Provider} from './Contexts/Context2';
 import Usuario from './Componets/Usuario';
+import './App.css';
 function App() {
   const router = createBrowserRouter([
     {path:'/',

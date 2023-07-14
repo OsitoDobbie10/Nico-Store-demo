@@ -2,6 +2,7 @@ import CustomAddCart from './CustomAddCart'
 import { useState } from 'react';
 
 const CustomWhatsapp = () => {
+    
     const {cart} = CustomAddCart();
     const [nombre,setNombre] = useState("")
     const [direccion,setDireccion] = useState("");
@@ -26,6 +27,13 @@ const CustomWhatsapp = () => {
       }
       const fecha = formatearfecha(date);
 
+
+      if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition((position)=>{
+        let latitud = position.coords.latitude;
+        let longitud = position.coords.longitude;
+        //URL de API de Whatsapp
+        
         const url = `https://api.whatsapp.com/send?phone=504${telefono}&text=
         *Asunto producto en venta*%0A
         *NC Store*%0A%0A
@@ -35,6 +43,8 @@ const CustomWhatsapp = () => {
         ${Descripcionproducto}%0A
         *Direccion del cliente*%0A
         ${direccion}%0A
+        *Coordenadas de ubicacion del pedido*%0A
+        Latitud: ${latitud} , longitud: ${longitud}*%0A
         *ID del producto de ${producto}*%0A
         ${IDproducto}%0A
         *Talla del producto que se compra*%0A
@@ -44,6 +54,11 @@ const CustomWhatsapp = () => {
         *Fecha en la que se pidió  el producto escogido*%0A
         ${fecha}%0A`;
         window.open(url);
+      })
+      }
+      else{
+        alert('No esta disponible la localizacion');
+      }
 
     }
    

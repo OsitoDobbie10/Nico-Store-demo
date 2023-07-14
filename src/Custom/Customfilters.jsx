@@ -21,7 +21,7 @@ const Customfilters = () => {
                 value.Talla === variables.Talla 
             ) && 
             (
-                variables.color == 'all' || 
+                variables.color === 'all' || 
                 value.color === variables.color
             )
          

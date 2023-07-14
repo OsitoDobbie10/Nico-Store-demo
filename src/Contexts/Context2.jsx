@@ -43,6 +43,7 @@ const removeCart = (product)=>{
             addCart,
             ClearCard,
             removeCart
+            
         }}>
             {children}
         </CreateContext2.Provider>
