@@ -119,6 +119,7 @@ const CustomCart = () => {
                     width:'350px',
                     height:'150px',
                     border: '1px solid white',
+                    marginTop:'10px',
                     marginBottom:'10px'
                   }}>
                     {
@@ -148,7 +149,7 @@ const CustomCart = () => {
                  </div>
                 </footer>
                </li>
-                }))
+            }))
                 
             }
         </ul>

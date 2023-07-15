@@ -7,7 +7,7 @@ const FormIntro = (props) => {
     const {password,setPassword,error,invalido,setInvalido} = CustomForm();
     const cambiarvalores = (texto)=>{
       let palabra = ''
-      for (let i=0; i<texto.length; i++){
+      for (let i=0; i< texto.length; i++){
            palabra += '*';
           }
           return palabra
@@ -40,8 +40,6 @@ const FormIntro = (props) => {
                  {error && <p className='ErrorPassword'>{error}</p>}
                  <button type="submit" className='btn btn-dark'>Confirmar empleado</button>
                  {invalido && <span className='Invalido'>{invalido}</span> }
-
-
             </form>
         </div>
     </div>
