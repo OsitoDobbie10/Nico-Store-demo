@@ -1,22 +1,21 @@
 {
   "files": {
     "main.css": "/Nico-Store-demo/static/css/main.886d3336.css",
-    "main.js": "/Nico-Store-demo/static/js/main.494a9bdd.js",
-    "static/media/Falda02.png": "/Nico-Store-demo/static/media/Falda02.88475f79cfa394bb910e.png",
-    "static/media/Pantalones01.png": "/Nico-Store-demo/static/media/Pantalones01.b961a80a834478959194.png",
-    "static/media/Pantalones02.png": "/Nico-Store-demo/static/media/Pantalones02.2e12a6c38512c3be231b.png",
-    "static/media/Pantalones03.png": "/Nico-Store-demo/static/media/Pantalones03.d20aeb3aa65bc486378d.png",
-    "static/media/Camisa05.png": "/Nico-Store-demo/static/media/Camisa05.b881ad5e81d814a3f9d5.png",
-    "static/media/Vestido01.png": "/Nico-Store-demo/static/media/Vestido01.0526bed4884fda383fc0.png",
-    "static/media/Camisa03.png": "/Nico-Store-demo/static/media/Camisa03.39fa1e134a0dfb105fdc.png",
-    "static/media/Camisa02.png": "/Nico-Store-demo/static/media/Camisa02.7d1f4b90fbb73050f14f.png",
-    "static/media/Camisa04.png": "/Nico-Store-demo/static/media/Camisa04.6f1073d2469d760926d5.png",
-    "static/media/Camisa01.png": "/Nico-Store-demo/static/media/Camisa01.2ea542f56cb68f4bb222.png",
-    "static/media/Falda01.png": "/Nico-Store-demo/static/media/Falda01.0639edbcc57a7382339c.png",
-    "static/media/Vestido04.png": "/Nico-Store-demo/static/media/Vestido04.b7b2b6e2c6f6ae35febd.png",
-    "static/media/Vestido03.png": "/Nico-Store-demo/static/media/Vestido03.759d6d05f9c77931fd8d.png",
-    "static/media/Vestido02.png": "/Nico-Store-demo/static/media/Vestido02.b8850e773da267da4d15.png",
+    "main.js": "/Nico-Store-demo/static/js/main.6b0ef821.js",
+    "static/media/Vestido03.png": "/Nico-Store-demo/static/media/Vestido03.3c5bbfe5376ba814efd4.png",
+    "static/media/Camisa04.png": "/Nico-Store-demo/static/media/Camisa04.5a0f598ab4a35ad9da11.png",
+    "static/media/Vestido02.png": "/Nico-Store-demo/static/media/Vestido02.5d31f07c7d86669d0874.png",
+    "static/media/Pantalones03.png": "/Nico-Store-demo/static/media/Pantalones03.38fb5d5d5c5ea159853a.png",
+    "static/media/Vestido05.png": "/Nico-Store-demo/static/media/Vestido05.256f6559cc0393967875.png",
+    "static/media/Vestido01.png": "/Nico-Store-demo/static/media/Vestido01.001fac6508c1fef20eac.png",
+    "static/media/Falda01.png": "/Nico-Store-demo/static/media/Falda01.bc7b0316488f0c80ce18.png",
+    "static/media/Vestido04.png": "/Nico-Store-demo/static/media/Vestido04.10c8b3941c0bfb9cf5ad.png",
+    "static/media/Pantalones01.png": "/Nico-Store-demo/static/media/Pantalones01.72b754a30bd98617ebf4.png",
+    "static/media/Pantalones02.png": "/Nico-Store-demo/static/media/Pantalones02.3f59465719fbbb59675c.png",
+    "static/media/Camisa01.png": "/Nico-Store-demo/static/media/Camisa01.58340e3b5602ee8d0084.png",
+    "static/media/Camisa03.png": "/Nico-Store-demo/static/media/Camisa03.e054b4803a0013690c5b.png",
     "static/media/Zapato02.jpeg": "/Nico-Store-demo/static/media/Zapato02.146f7ccf4bab5a4205e5.jpeg",
+    "static/media/Camisa02.png": "/Nico-Store-demo/static/media/Camisa02.42ff99ff6cad96be74ff.png",
     "static/media/Zapato01.jpeg": "/Nico-Store-demo/static/media/Zapato01.a737075a7b20d6800116.jpeg",
     "static/media/FondoTienda.jpg": "/Nico-Store-demo/static/media/FondoTienda.e91557f5d7dd0b6d8ea4.jpg",
     "static/media/LOGO1.png": "/Nico-Store-demo/static/media/LOGO1.a5b0d223c3e4632381ee.png",
@@ -31,10 +30,10 @@
     "static/media/Bolsa-compras2.png": "/Nico-Store-demo/static/media/Bolsa-compras2.e2d6dfb6159f014f6527.png",
     "index.html": "/Nico-Store-demo/index.html",
     "main.886d3336.css.map": "/Nico-Store-demo/static/css/main.886d3336.css.map",
-    "main.494a9bdd.js.map": "/Nico-Store-demo/static/js/main.494a9bdd.js.map"
+    "main.6b0ef821.js.map": "/Nico-Store-demo/static/js/main.6b0ef821.js.map"
   },
   "entrypoints": [
     "static/css/main.886d3336.css",
-    "static/js/main.494a9bdd.js"
+    "static/js/main.6b0ef821.js"
   ]
 }
