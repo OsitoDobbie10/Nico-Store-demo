@@ -1,5 +1,5 @@
 import React from 'react'
-//import Navbar from './Navbar';
+import Navbar from './Navbar';
 import ScrollToTop from "./ScrollToTop";
 import { useState } from 'react';
 import { useId } from 'react';
@@ -29,6 +29,7 @@ const Faldas = () => {
   if (intro3) return <Sppiner/>
   return (
     <div>
+      <Navbar/>
       <ScrollToTop/>
       <Coveruser imagen={FotoFalda} tipo="Faldas" valor="Inicio" />
       <div className="grilla">

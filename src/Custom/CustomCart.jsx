@@ -90,7 +90,7 @@ const CustomCart = () => {
             {
                 cart.map((carrito=>{
                     return  <li key={carrito.id}>
-                    <img src={carrito.imagen} alt="elemento" style={{width:'120px',
+                    <img src={carrito.imagen} alt="elemento" style={{width:'130px',
                                                                      height:'100px',
                                                                      display:'block',
                                                                      margin:'auto'}}/>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-//import Navbar from './Navbar';
+import Navbar from './Navbar';
 import Sppiner from './Sppiner';
 import ScrollToTop from "./ScrollToTop";
 import Fondo from '../ComponentsHome/Fondo';
@@ -16,6 +16,7 @@ const Home = () => {
   if (valor) return <Sppiner/>
   return (
     <div>
+      <Navbar/>
       <ScrollToTop/>
       <Fondo/>
       <Cover/>

@@ -27,7 +27,8 @@ const CustomProducts = (props) => {
       const array = newproductos.find(data=>data.id === value.id)
       const newobjeto = {
           imagen: array.imagen,
-          descp: array.descp
+          descp: array.descp,
+          precio: array.precio
       }
       setEstado1(newobjeto)
 
@@ -73,12 +74,13 @@ const CustomProducts = (props) => {
         <img src={estado1.imagen} alt={estado1.descp} />
         <ul className='Arreglo'>
           <li>{`Articulo: ${estado1.descp}`}</li> 
+          <li>{`Precio: ${estado1.precio}`}</li>
         </ul>
        
       </div>:
       <div></div>
       }
-    </div>
+       </div>
     )
  
 }

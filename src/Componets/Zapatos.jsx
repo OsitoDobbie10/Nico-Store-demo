@@ -1,5 +1,5 @@
 import React from 'react'
-//import Navbar from './Navbar';
+import Navbar from './Navbar';
 import ScrollToTop from "./ScrollToTop";
 import { useState } from 'react';
 import { useId } from 'react';
@@ -30,6 +30,7 @@ const Zapatos = () => {
   if (intro) return <Sppiner/>
   return (
     <div>
+       <Navbar/>
        <ScrollToTop/>
        <Coveruser imagen={Fotozapato} tipo="Zapatos" valor="Inicio" />
        <div className="grilla">

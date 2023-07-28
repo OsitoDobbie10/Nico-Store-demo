@@ -14,93 +14,44 @@ import {Context2Provider} from './Contexts/Context2';
 import Usuario from './Componets/Usuario';
 import './App.css';
 import Navbar from './Componets/Navbar';
+import ViewArticle from './Custom/ViewArticle';
 function App() {
   const router = createBrowserRouter([
-    {
-      path:'/',
-      element: <Navbar/>,
-      errorElement: <Navigate to={'/'}/>,
-      children:[
-        {
-          index:true,
-          element:<Home/>
-        }]
-    },
-    {
-      path:'/Camisas',
-      element:<Navbar/>,
-      errorElement:<Navigate to={'/'}/>,
-      children:[
-        {
-          index:true,
-          element:<Camisas/>
-        },
-        {
-          path:'/Camisas:camisasId/Articulo',
-          element:<Carritocamisas/>
-        }
-      ]
-    },
-    {
-      path: '/Zapatos',
-      element:<Navbar/>,
-      errorElement:<Navigate to={'/'}/>,
-      children:[
-        {
-          index:true,
-          element:<Zapatos/>
-        },
-        {
-          path:'/Zapatos:ZapatosId/Articulo',
-          element:<Carritozapatos/>
-        }
-      ]
-    },
-    {
-      path:'/Faldas',
-      element:<Navbar/>,
-      errorElement: <Navigate to={'/'}/>,
-      children:[
-        {
-          index:true,
-          element:<Faldas/>
-        },
-        {
-          path:'/Faldas:FaldasId/Articulo',
-          element:<Carritofaldas/>
-        }
-      ]
-    },
-    {
-      path:'/Vestidos',
-      element:<Navbar/>,
-      errorElement: <Navigate to={'/'}/>,
-      children:[
-        {
-          index:true,
-          element:<Vestidos/>
-        },
-        {
-          path:'/Vestidos:VestidosId/Articulo',
-          element:<Carritovestidos/>
-        }
-      ]
-    },
-    {
-      path:'/Pantalones',
-      element:<Navbar/>,
-      errorElement: <Navigate to={'/'}/>,
-      children:[
-        {
-          index:true,
-          element:<Pantalones/>
-        },
-        {
-          path:'/Pantalones:PantalonesId/Articulo',
-          element:<CarritoPantalones/>
-        }
-      ]
-    }
+    {path:'/',
+    element:<Home/>,
+    errorElement:<Navigate to='/'/>},
+    {path:'/Camisas',
+    element:<Camisas/>,
+    children:[
+      {path:'/Camisas:camisasId/Articulo',
+       element:<Carritocamisas/>}
+    ]},
+    {path:'/Zapatos',
+    element:<Zapatos/>,
+    children:[
+      {path:'/Zapatos:ZapatosId/Articulo',
+       element:<Carritozapatos/>}
+    ]},
+    {path:'/Faldas',
+    element:<Faldas/>,
+    children:[
+    {path:'/Faldas:FaldasId/Articulo',
+    element:<Carritofaldas/>}
+    ]},  
+    {path:'/Vestidos',
+    element:<Vestidos/>,
+    children:[
+      {path:'/Vestidos:VestidosId/Articulo',
+      element:<Carritovestidos/>}
+      ]},
+    {path:'/Pantalones',
+    element:<Pantalones/>,
+    children:[
+      {path:'/Pantalones:PantalonesId/Articulo',
+      element:<CarritoPantalones/>}
+      ]},
+      {path:'/Productos',
+      element:<Usuario/>}
   ])
   return (
     <Context2Provider>
