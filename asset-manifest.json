@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Nico-Store-demo/static/css/main.c22df853.css",
+    "main.css": "/Nico-Store-demo/static/css/main.7679bfe0.css",
     "main.js": "/Nico-Store-demo/static/js/main.99bd837e.js",
     "static/media/Vestido03.png": "/Nico-Store-demo/static/media/Vestido03.3c5bbfe5376ba814efd4.png",
     "static/media/Camisa04.png": "/Nico-Store-demo/static/media/Camisa04.5a0f598ab4a35ad9da11.png",
@@ -29,11 +29,11 @@
     "static/media/Pantalones.png": "/Nico-Store-demo/static/media/Pantalones.97560eb9e19e76c11c43.png",
     "static/media/Bolsa-compras2.png": "/Nico-Store-demo/static/media/Bolsa-compras2.e2d6dfb6159f014f6527.png",
     "index.html": "/Nico-Store-demo/index.html",
-    "main.c22df853.css.map": "/Nico-Store-demo/static/css/main.c22df853.css.map",
+    "main.7679bfe0.css.map": "/Nico-Store-demo/static/css/main.7679bfe0.css.map",
     "main.99bd837e.js.map": "/Nico-Store-demo/static/js/main.99bd837e.js.map"
   },
   "entrypoints": [
-    "static/css/main.c22df853.css",
+    "static/css/main.7679bfe0.css",
     "static/js/main.99bd837e.js"
   ]
 }
